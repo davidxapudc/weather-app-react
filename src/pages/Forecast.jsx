@@ -11,7 +11,7 @@ function Forecast({ title, data }) {
                     <div key={index} className="flex flex-col justify-center">
                         <p className="font-light text-sm">{d.title}</p>
                         <img src={d.icon} alt="" className="w-12 my-1" />
-                        <p className="font-medium">{`${d.temp.toFixed()}`}</p>
+                        <p className="font-medium">{`${d.temp.toFixed()}°`}</p>
                     </div>
                 ))}
             </div>

@@ -10,7 +10,7 @@ function Forecast({ title, data }) {
             <div className="flex items-center justify-between">
                 {data.map((d, index) => (
                     <div key={index} className="flex flex-col justify-center">
-                        <p className="font-light text-sm">{d.title}</p>
+                        <p className="font-light text-sm">{d.title}°</p>
                         <img src={d.icon} alt="" className="w-12 my-1" />
                         <p className="font-medium">{`${d.temp.toFixed()}`}</p>
                     </div>
